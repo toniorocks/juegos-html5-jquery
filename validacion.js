@@ -7,19 +7,19 @@ $(document).ready(() => {
         //limpiamos los mensajes de error
         $(".invalid-feedback").remove();
         $("#campo-email").removeClass('is-invalid');
-        $("#campo-nombre").removeClass('is-invalid');
+        $("#campo-password").removeClass('is-invalid');
 
-        let nombre = $("#campo-nombre").val();
+        let password = $("#campo-password").val();
         let email = $("#campo-email").val();
 
         let error = false;
 
-        if(nombre == ''){
+        if(password == ''){
             $("#campo-nombre").addClass('is-invalid');
-            let parent = $("#campo-nombre").parent();
-            let div = $("<div class='invalid-feedback'>El campo nombre es obligatorio</div>");
+            let parent = $("#campo-password").parent();
+            let div = $("<div class='invalid-feedback'>El campo password es obligatorio</div>");
             parent.append(div);
-            $("#campo-nombre").focus();
+            $("#campo-password").focus();
             error = true;
         }
 
@@ -54,7 +54,7 @@ $(document).ready(() => {
             method: 'POST',
             contentType: 'application/json',
             data: JSON.stringify({
-                nombre: nombre,
+                password: password,
                 email: email
             }),
         }).done((data) => {

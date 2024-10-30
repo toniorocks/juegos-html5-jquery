@@ -17,10 +17,10 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link disabled" href="juegos.html">Inicio</a>
+                    <a class="nav-link" href="index.html">Login</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="registro.html">Registro</a>
+                    <a class="nav-link disabled" href="juegos.html">Inicio</a>
                   </li>
                 </ul>
               </div>
@@ -32,23 +32,26 @@
             <div class="card">
 
                 <div class="card-header">
-                    <h1>Bienvenido a mi juego</h1>
-                    <p>Ingresa tu nombre y email</p>
+                    <h1>Registrar Usuario</h1>
                 </div>
                 <div class="card-body">
 
                     <form id="formulario" novalidate>
-                        <!-- <div class="mb-3">
+                        <div class="mb-3">
                           <label for="campo-nombre" class="form-label">Nombre de usuario</label>
                           <input type="text" class="form-control" name="nombre" id="campo-nombre" placeholder="Ingresa tu nombre">
-                        </div> -->
+                        </div>
                         <div class="mb-3">
                           <label for="campo-email" class="form-label">Email</label>
                           <input type="email" class="form-control" name="email" id="campo-email" placeholder="Ingresa un email">
                         </div>
                         <div class="mb-3">
                           <label for="campo-password" class="form-label">Password</label>
-                          <input type="password" class="form-control" name="password" id="campo-password" placeholder="Ingresa un password">
+                          <input type="password" class="form-control" name="email" id="campo-password" placeholder="Ingresa un password">
+                        </div>
+                        <div class="mb-3">
+                          <label for="campo-confirma" class="form-label">Confirma Password</label>
+                          <input type="password" class="form-control" name="email" id="campo-confirma" placeholder="Confirmar password">
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar</button>
                       </form>
@@ -69,7 +72,7 @@
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="jquery.js" type="text/javascript"></script>
-        <script src="validacion.js" type="text/javascript"></script>
+        <script src="validacion-registro.js" type="text/javascript"></script>
         <script>
 
             $(document).ready(function() {
