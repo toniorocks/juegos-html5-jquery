@@ -1,0 +1,14 @@
+#gameButton {
+    position: absolute;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #28A745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#gameButton:hover {
+    background-color: #218838;
+}

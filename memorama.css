@@ -1,0 +1,44 @@
+.memorama {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+}
+
+.tablero{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+}
+
+.carta {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    background-size: cover;
+}
+
+.carta.volteada[data-pareja="1"] {
+    background-image: url('images/calabaza.jpg');
+}
+
+.carta.volteada[data-pareja="2"] {
+    background-image: url('images/gato.jpg');
+}
+.carta.volteada[data-pareja="3"] {
+    background-image: url('images/fantasma.jpg');
+}
+.carta.volteada[data-pareja="4"] {
+    background-image: url('images/calabazanegra.jpg');
+}
+.carta.volteada[data-pareja="5"] {
+    background-image: url('images/calavera.jpg');
+}
+.carta.volteada[data-pareja="6"] {
+    background-image: url('images/calaverasombrero.jpg');
+}
